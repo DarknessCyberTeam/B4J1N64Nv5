@@ -1,0 +1,54 @@
+<html><head><title></title></head>
+<body>
+<br>
+<link href='http://fonts.googleapis.com/css?family=Orbitron:700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Anton' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet' type='text/css'>
+<body bgcolor="#000000" background =><div class='CenterDiv'>
+<center>
+<h1><center><font color="red" face=Orbitron><h1></font>
+<img src= width=450px height=340px>
+<body onload="init()"></body>
+<body>
+<div id="bulle"></div>
+<script language="JavaScript">
+var i=0
+var j=0
+var texteNE, affiche
+var texte="<br><br><br><br><br><font face=Orbitron color= size=4><br><br></font><br></b></div>"
+var ie = (document.all);
+var ne = (document.layers); 
+function init(){
+texteNE='';
+machine_a_ecrire();
+}
+function machine_a_ecrire(){
+texteNE=texteNE+texte.charAt(i)
+affiche='<font face=Orbitron size=1 color=#ffffff><strong>Messenge : '+texteNE+'</strong></font>'
+if (texte.charAt(i)=="<") {
+j=1
+}
+if (texte.charAt(i)==">") {
+j=0
+}
+if (j==0) {
+if (document.getElementById) { // avec internet explorer
+document.getElementById("bulle").innerHTML = affiche;
+}
+}
+if (i<texte.length-1){
+i++
+setTimeout("machine_a_ecrire()",70)
+}
+else
+return
+}
+</script><font face="Orbitron" size="1"><blink><span style="color: rgb(255, 255, 255);"><b><font color=lime size=4></font></b></u></blink><br></font></b>
+<a href="/index.php"><img style="position:fixed;bottom:0px;z-index:1000;right:-10px;"  src="http://static1.squarespace.com/static/5706c12007eaa0b82399660d/5706c68bf0bc33987cae6c71/577d5c5d37c581fd0e25c10b/1469717705608/insult-145142_1280.png" type="image/gif" width="150"></a></body>
+<!-- CSS --><style>
+.CenterDiv{width:650px;border:1px #ff0000 solid;padding:5px;margin:0px auto; background: url('http://i.imgur.com/sDbaMsW.gif');}
+</style>
+<br>
+<br>
+<br>
+<iframe width="0" height="0" src="http://www.youtube.com/v/&autoplay=1" frameborder="0"></iframe>
